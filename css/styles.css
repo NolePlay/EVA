@@ -63,7 +63,7 @@ body {
     width: 100%;
 }
 
-#section img {
+img {
     width: 100%;
 }
 
@@ -153,6 +153,14 @@ html {
     padding-right: 20px;
 }
 
+.relleno-derecha {
+    padding-right: 5%;
+}
+
+.relleno-izquierda {
+    padding-left: 5%;
+}
+
 /* Estilo Barra Navegación */
 
 #navbar {
@@ -196,8 +204,16 @@ html {
     }
 
     .relleno-lateral {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .column-1 {
+        width: 100%;
+    }
+
+    .column-2 {
+        width: 100%;
     }
 
 }
