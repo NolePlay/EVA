@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="./fontawesome/file-code-regular.svg">
+    <script src="./js/codigo.js"></script>
+    <script src="https://kit.fontawesome.com/3cbe551640.js" crossorigin="anonymous"></script>
+    <title>HTML y CSS</title>
+</head>
+
+<body>
+
+    <div class="flex" id="header">
+        <div class="column-1">
+            <h1>Estructura del HTML y Hoja de Estilos CSS</h1>
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="#section-3">CSS</a>
+        <a href="#section-2">HTML</a>
+        <a href="#section-1">Vídeo</a>
+        <a href="#header" class="active"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <div class="row relleno-lateral" id="section-1">
+            <h2>Conceptos Básicos de HTML:5</h2>
+            
+            <iframe 
+                width="1920" 
+                height="1080" 
+                src="https://www.youtube.com/embed/CdfMG_Qy00E" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+    </div>
+
+    <div class="row relleno-lateral flex" id="section-2">
+        <div class="column-2">
+            <img src="./img/estructura html.JPG">
+        </div>
+        <div class="column-2">
+            <h1>HTML:</h1>
+            <h2>Estructura básica del HTML</h2>
+            <p>!DOCTYPE html: Es el tipo de documento</p>
+            <p>html: Toda la información que hay que poner en la web se empieza mediante esta etiqueta</p>
+            <p>head: Es información de la web NO VISIBLE</p>
+            <p>/head: Se usa para cerrar el head</p>
+            <p>body: Ahí dentro va todo el contenido de la Web VISIBLE</p>
+            <p>/body: Se usa para cerrar el body</p>
+            <p>/html: Se usa para cerrar el html</p>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-3">
+        <div class="column-2">
+            <h1>CSS:</h1>
+            <h2>Atributos CSS</h2>
+            <p>Los atributos proporcionan información adicional acerca de los elementos.</p>
+            <p>Un ejemplo de un atributo podría ser el de la imagen → href</p>
+            <p>href: Se usa para hacer referencia a una parte de nuestro código o a algún enlace de internet</p>
+        </div>
+        <div class="column-2">
+            <img src="./img/atributos.JPG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-4">
+        <div class="column-2">
+            <img src="./img/etiquetascss.JPG">
+        </div>
+        <div class="column-2">
+            <h2>Etiquetas CSS</h2>
+            <p>Las etiquetas o selectores sirven para dar estilo solo a esos.</p>
+            <p>Algunos ejemplos son: h1, #section-1, #header.</p>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-5">
+        <div class="column-2">
+            <h2>Propiedades CSS</h2>
+            <p>La propiedades son para definir las mismas de las reglas, por ejemplo la fuente del texto, el tamaño, etc.</p>
+            <p>Algunos ejemplos son: color:, background-color:, font-size:.</p>
+        </div>
+        <div class="column-2">
+            <img src="./img/propiedadescss.JPG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-6">
+        <div class="column-2">
+            <img src="./img/reglascss.JPG">
+        </div>
+        <div class="column-2">
+            <h2>Reglas CSS</h2>
+            <p>Una regla CSS se compone de un selector y de un bloque de declaración.</p>
+            <p>Cada declaración está compuesta por uno o más pares propiedad/valor</p>
+            <p>El bloque de declaración empieza y acaba con los signos de  llaves { ... }</p>
+            <p>Cada par propiedad/valor se separa por el signo punto y coma  ;</p>
+            <p>Cada propiedad debe separarse de su valor por el signo dos puntos  :</p>
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-7">
+        <div class="column-2">
+            <h2>Comentarios CSS</h2>
+            <p>Para añadir comentarios en CSS se usa la siguiente estructura:</p>
+            <p>/* TEXTO A COMENTAR */</p>
+            <p>Además se mostrará en color verde para confirmar que es un comentario.</p>
+            <p>(El color depende de la app que usemos para escribir el código)</p>
+        </div>
+        <div class="column-2">
+            <img src="./img/comentariocss.JPG">
+        </div>
+    </div>
+
+    <div class="row flex relleno-lateral" id="section-8">
+        <div class="column-2">
+            <img src="./img/valorescss.JPG">
+        </div>
+        <div class="column-2">
+            <h2>Valores CSS</h2>
+            <p>Los Valores aportan información adicional sobre la propiedad y además dan formato</p>
+        </div>
+    </div>
+
+    <div class="row" id="section-9">
+        <div class="relleno-lateral column-1">
+            <h3>Selecciona un Idioma:</h3>
+            <select name="language" id="language" onchange="language()">
+                <option value="ES" selected>Español</option>
+                <option value="CA">Català</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
